@@ -121,7 +121,7 @@ def get_other_demand(
         "subsector", level="cat_name"
     )
     all_other_consumption_filled = all_other_consumption_filled.stack()
-    breakpoint()
+
     if path_output:
         all_other_consumption_filled.reorder_levels(fmt.LEVEL_ORDER).to_csv(path_output)
 
